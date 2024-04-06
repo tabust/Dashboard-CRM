@@ -148,7 +148,7 @@ body {
   margin-bottom: 7px;
 }
 
-.content h4 {
+.content .title-search h4 {
   font-weight: 400;
   font-size: 14px;
   color: #16c098;
@@ -162,14 +162,49 @@ body {
 
 .search {
   position: relative;
+  align-items: center;
   padding-left: 8px;
   background-color: #f9fbff;
   border-radius: 6px;
 }
 
 input {
+  padding-bottom: 10px;
   border: none;
   outline: none;
   width: 205px;
   background-color: #f9fbff;
+}
+
+input::placeholder {
+  color: #b5b7c0;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.categories h4 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #b5b7c0;
+  margin-bottom: 14px;
+}
+
+.customers {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.customers h4 {
+  margin-top: 24px;
+  color: #292d32;
 }
