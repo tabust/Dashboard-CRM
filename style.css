@@ -11,30 +11,30 @@ body {
   font-weight: bold;
 }
 
-.big-container {
+.big__container {
   display: grid;
   grid-template-columns: 308px 2fr;
 }
 
-.side-header {
+.side__header {
   display: flex;
   margin-left: 28px;
   margin-top: 36px;
 }
 
-.side-logo {
+.side__logo {
   margin-right: 8px;
   width: 37px;
   height: 37px;
 }
 
-.side-title {
+.side__title {
   font-weight: 600;
   font-size: 26px;
   margin-right: 4px;
 }
 
-.side-version {
+.side__version {
   margin-top: 18px;
   font-weight: 400;
   color: #838383;
@@ -69,7 +69,7 @@ body {
   padding: 1px;
 }
 
-.tab-customers {
+.tab__customers {
   display: flex;
   background-color: #5932ea;
   color: white;
@@ -105,12 +105,12 @@ body {
   margin-right: 12px;
 }
 
-.person-text {
+.person__text {
   display: flex;
   flex-direction: column;
 }
 
-.person-title {
+.person__title {
   font-weight: 400;
   font-size: 14px;
 }
@@ -125,7 +125,7 @@ body {
   background-color: #fafbff;
 }
 
-.main-title {
+.main__title {
   margin-top: 41px;
   margin-left: 71px;
   font-weight: 400;
@@ -148,13 +148,13 @@ body {
   margin-bottom: 7px;
 }
 
-.content .title-search h4 {
+.content .title__search h4 {
   font-weight: 400;
   font-size: 14px;
   color: #16c098;
 }
 
-.title-search {
+.title__search {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -183,6 +183,8 @@ input::placeholder {
 }
 
 .categories {
+  /* display: grid;
+  grid-template-columns: repeat(6, 1fr); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -195,16 +197,33 @@ input::placeholder {
   font-size: 14px;
   color: #b5b7c0;
   margin-bottom: 14px;
+  margin-right: 10px;
 }
 
 .customers {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
+  column-gap: 10px;
 }
 
-.customers h4 {
+.customers p {
   margin-top: 24px;
   color: #292d32;
+}
+
+.customers span {
+  margin-top: 24px;
+}
+
+.active {
+  color: #008767;
+  background-color: #16c098;
+  padding: 4px 18px;
+  border: 1px solid #00b087;
+  border-radius: 5px;
 }
