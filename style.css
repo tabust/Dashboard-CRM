@@ -13,6 +13,11 @@
   grid-template-columns: 308px 2fr;
 }
 
+.sidebar {
+  width: 306px;
+  box-shadow: 0px 10px 60px 0px #e2ecf9;
+}
+
 .side__header {
   display: flex;
   margin-left: 28px;
@@ -157,15 +162,19 @@
 }
 
 .search {
-  position: relative;
+  display: flex;
   align-items: center;
   padding-left: 8px;
   background-color: #f9fbff;
   border-radius: 6px;
 }
 
+.search-icon {
+  margin-right: 8px;
+  margin-top: 7px;
+}
+
 input {
-  padding-bottom: 10px;
   border: none;
   outline: none;
   width: 205px;
