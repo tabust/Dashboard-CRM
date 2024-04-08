@@ -334,5 +334,17 @@ td {
 
   .content {
     margin-left: 20px;
+    width: auto;
+  }
+
+  th td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+  }
+
+  .status {
+    text-align: center;
   }
 }
